@@ -5,3 +5,8 @@ spring:
       username:
       password:
       driverClassName: ru.yandex.clickhouse.ClickHouseDriver
+
+# 默认 MP 查询日志
+#logging:
+#  level:
+#    com.example.mp.demo.mapper.ck: debug

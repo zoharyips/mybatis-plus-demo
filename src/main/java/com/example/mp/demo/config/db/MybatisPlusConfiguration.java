@@ -32,6 +32,7 @@ public class MybatisPlusConfiguration {
         factoryBean.setDataSource(ckDruidDataSource);
         // 可以增加许多额外功能
         MybatisConfiguration configuration = new MybatisConfiguration();
+        configuration.addInterceptor(new MybatisLogInterceptor());
         factoryBean.setConfiguration(configuration);
         return factoryBean.getObject();
     }

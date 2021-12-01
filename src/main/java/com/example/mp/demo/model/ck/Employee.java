@@ -24,6 +24,4 @@ public class Employee {
     private Integer age;
     private String address;
     private String departmentId;
-    @TableField(exist = false)
-    private String departmentName;
 }
